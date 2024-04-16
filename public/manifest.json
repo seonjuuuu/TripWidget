@@ -12,8 +12,14 @@
     },
     "default_title": "아이콘 커서에 올리면 표시되는 이름"
   },
-  "permission":["storage", "notifications", "alarms"],
+  "icon":{
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions":["storage",  "windows"],
   "author": "작성자",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background": {
+    "service_worker": "background.js"
+  }
 }
