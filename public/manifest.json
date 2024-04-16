@@ -4,22 +4,18 @@
   "name": "Chrome extension test(크롬 익스텐션 이름)",
   "description": "크롬 익스텐션 설명부분",
   "action": {
-    "default_popup": "index.html",
     "default_icon": {
-      "16":"logo.png",
-      "32":"logo.png",
-      "48":"logo.png"
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png"
     },
     "default_title": "아이콘 커서에 올리면 표시되는 이름"
   },
-  "icon":{
-    "16": "logo.png",
-    "48": "logo.png",
-    "128": "logo.png"
-  },
-  "permissions":["storage",  "windows"],
+  "permissions": ["windows", "activeTab"],
   "author": "작성자",
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "display": "front",
+  "start_url": "."
 }
