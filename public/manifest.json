@@ -1,25 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Chrome extension test(크롬 익스텐션 이름)",
+  "description": "크롬 익스텐션 설명부분",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16":"logo.png",
+      "32":"logo.png",
+      "48":"logo.png"
     },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
+    "default_title": "아이콘 커서에 올리면 표시되는 이름"
+  },
+  "permission":["storage", "notifications", "alarms"],
+  "author": "작성자",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
